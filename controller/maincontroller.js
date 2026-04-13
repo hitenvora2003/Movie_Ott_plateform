@@ -48,7 +48,7 @@ exports.getalldata = async (req, res) => {
                 totalusers, totalgenres, totalmovies, totalseriess, totalepisodes, totalsubscriptions, totalpayments, totalwatchHistories, totalreviews,
 
                 paginationMessage: "Pagination successful",
-                dataMessage: "All data has been successfully found.",
+   
 
 
                 data: {
