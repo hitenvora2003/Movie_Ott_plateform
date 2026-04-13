@@ -34,6 +34,6 @@ const movieSchema = new mongoose.Schema({
         type: String,
         required: [true, "enter Url"],
     }
-});
+},{ timestamps: true });
 
 module.exports = mongoose.model("Movie", movieSchema);

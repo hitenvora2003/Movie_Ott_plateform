@@ -12,6 +12,6 @@ const reviewSchema = new mongoose.Schema({
         required: [true, "enter rating"],
     },
     comment: String
-},);
+},{ timestamps: true });
 
 module.exports = mongoose.model("Review", reviewSchema);

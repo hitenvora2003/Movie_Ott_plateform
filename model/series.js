@@ -19,8 +19,6 @@ const seriesSchema = new mongoose.Schema({
         required: [true, "enter thumbnail"],
 
     },
-},
-
-);
+},{ timestamps: true });
 
 module.exports = mongoose.model("Series", seriesSchema);

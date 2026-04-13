@@ -19,6 +19,6 @@ const paymentSchema = new mongoose.Schema({
     },
     status: { type: String, enum: ["pending", "success", "failed"], default: "pending" },
     paymentDate: { type: Date, default: Date.now }
-});
+},{ timestamps: true });
 
 module.exports = mongoose.model("Payment", paymentSchema);

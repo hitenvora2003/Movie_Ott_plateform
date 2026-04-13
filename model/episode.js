@@ -27,6 +27,6 @@ const episodeSchema = new mongoose.Schema({
     type : Date,
     required: [true,"enter releasedate"]
   }
-});
+},{ timestamps: true });
 
 module.exports = mongoose.model("Episode", episodeSchema);

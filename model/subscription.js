@@ -14,6 +14,6 @@ const subscriptionSchema = new mongoose.Schema({
         required: [true, "enter durationInDays"],
     },
     features: [String]
-});
+},{ timestamps: true });
 
 module.exports = mongoose.model("Subscription", subscriptionSchema);

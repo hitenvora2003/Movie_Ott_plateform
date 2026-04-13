@@ -48,7 +48,7 @@ app.use('/subscription', subscription);
 app.use('/payment', payment);
 app.use('/watchHistory', watchHistory);
 app.use('/review', review);
-app.use('/all-data',mainRoutes);
+app.use('/api',mainRoutes);
 
 
 

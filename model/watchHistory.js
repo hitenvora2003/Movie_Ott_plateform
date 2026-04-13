@@ -15,6 +15,6 @@ const watchHistorySchema = new mongoose.Schema({
     },
     lastWatchedAt: { type: Date, default: Date.now },
     progress: { type: Number, default: 0 } // percentage watched
-},);
+},{ timestamps: true });
 
 module.exports = mongoose.model("WatchHistory", watchHistorySchema);
